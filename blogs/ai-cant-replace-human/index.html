@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        :root {
+            --text: #1a1a1a;
+            --muted: #888;
+            --bg: #fdfdfc;
+            --rule: #e8e8e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+                Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                "WenQuanYi Micro Hei", "Noto Sans CJK SC", sans-serif;
+            line-height: 1.9;
+            font-size: 18px;
+            font-style: normal;
+            font-synthesis: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 5rem 1.5rem 6rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 1.75rem;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .date {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+            color: var(--muted);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: 0.01em;
+        }
+
+        .byline {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        article p {
+            margin-bottom: 1.6rem;
+            text-align: justify;
+            overflow-wrap: break-word;
+            font-style: normal;
+        }
+
+        @media (max-width: 600px) {
+            body { font-size: 17px; }
+            .container { padding: 3rem 1.25rem 4rem; }
+            h1 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="date">June 30, 2026</div>
+            <h1>Blog</h1>
+            <div class="byline">Written by Xijia Polina Zhang</div>
+        </header>
+        <article>
+            <p>最近，关于AI即将全面取代人类的论调越发盛行。不仅普通民众如此，就连我身边不少AI从业者，甚至是在前沿实验室工作的研究者，也抱持着类似看法。起初我只是有些怀疑，后来愈发怀疑，直到终于按捺不住，决定认真梳理一番，看看他们的理由究竟何在，于是便有了这篇文字。先说我的观点：AI永远无法取代所有人，总有人类的一席之地。</p>
+
+            <p>首先界定讨论的范畴。本文讨论的AI特指当前基于大数据进行模式识别、逼近通用智能的技术路线，如ChatGPT等大语言模型以及基于其上的Agent智能体。如果未来整个行业范式被推翻（这完全可能），在此不做讨论。但那属于虚构可能性，跟"外星人降临地球"、"人类研发出读心术"等事件一样，理论上可发生，目前无清晰证据支持。而最近公众讨论的取代人类的AI，指的则是当下的这类AI。</p>
+
+            <p>去年我在互联网上看到人类被取代的论调，是直接当耳边风的。为什么呢，我是AI researcher + 重度用户，从gpt3.5就开始做prompt engineering直到后来的context engineering和skill engineering已经三年半了，每天给AI发的prompt比每个月给朋友们发的消息说的话还要多。我的使用场景，从科研工作的各环节（写代码，构思怎么写代码，构思idea，润色给老板的邮件），到科研工作本身（两篇论文测了LLM生成explanation的能力，一篇论文测了VLM生成feature extraction的能力），到个人兴趣爱好如创意写作、心理学分析，到生活的方方面面（减肥该吃什么、床垫买哪家、牛仔裤配什么上衣），我无一不使用AI。这个过程中，我发现它在执行类任务上极其强悍，只要把要求交代清楚，它完成得比所有人类都好。但一旦需求定义空间出现松动，需要它自行揣测意图进行思考，性能就开始打折扣。需求越不明确，折损越明显。</p>
+
+            <p>基于此，我得出AI肯定取代不了人类。尤其顶尖科研，需求非常不明确，是要看到别人看不到或者看到了但没有当回事的东西，从而筛选出最具价值的问题去下注。这种研究品味，AI根本没法有，它给出的价值判断是基于互联网大量数据的平庸化、模板化的pattern recognition（看到某些词语触发某些模式的生成）。两个方向摆在面前，逻辑自洽，它都觉得是可成立的问题。必须由我把各种粒度化的考量因素通过提示词喂进去，它才能比较优劣。用了这么久的AI我清晰地知道，单一的next token prediction，绝对无法模拟出好的taste，那需要严谨的系统2思维。</p>
+
+            <p>但后来我和前沿实验室的朋友交流，他们提到已经在尝试用Agent模拟顶级研究者的品味和思考方式，让AI自主筛选高价值研究问题。这让我意识到我的推理有巨大漏洞。相比于古早的LLM，现在的Agent早已不是单一的next token prediction，而是可以生成自身上下文，先分析因子A作为一层上下文，再分析因子B作为另一层，最后基于这些复合因素做决策。换言之，单一的LLM是单纯的系统1思维，Agent架构则是可以用系统2思维来约束系统1思维最后无限逼近人类的思考方式。所以"AI只会系统1思维所以不行"这个论断，完全不成立。</p>
+
+            <p>那一刻我全面倒向降临派，因为我立刻意识到：如果一个顶级研究者去蒸馏自己的系统2思维，让Agent遵循自己的思考过程，在得出结论的时候必须分析前置因素1234排除不相关的因素abc，不允许直接从latent space生成或跳逻辑链，那AI完全可以复刻他的研究品味。解决了研究品味这个AI最薄弱的环节，剩下的执行自然不是问题。</p>
+
+            <p>但我旋即意识到问题出在成本。以我为例，假设构建一个能复刻我决策的Agent，把系统2思维蒸馏成架构并让LLM严格遵循，内部会涉及极多并行子过程，不仅是让模型遵循step123，而是每个step都有很多recursive的子步骤（step1.123里还有更多recursion）。即便未来token降到无比廉价、数据中心全免费，仅算水和电的基础费用，模拟我决策的Agent成本也比我本人贵——GPU几百瓦，我的大脑仅20瓦且缓存复用高效，AI若严格模拟同样庞大的子过程，不如我本人经济，因此如果目标是模拟我的决策，雇佣AI不如雇佣我本人。</p>
+
+            <p>这里读者可能会说，我本人并无显赫成就，拿我举例有何意义？有意义。模拟我的决策无意义，但模拟人类文明前沿的、突破范式的人的决策有意义，AGI研究的就是这件事。而只要模拟人的系统2思维，就涉及上述成本估算。我这个个例的存在足以证明，世界上存在一撮人，其思考过程天然比AI更昂贵。在这一撮人里，有可能诞生引领领域前进的研究者。AI不能取代的，正是这一波人。</p>
+
+            <p>回到最初的问题，那为什么我身边很多AI研究者都坚信AI能完全取代人类呢？我之前一度怀疑我的分析哪里出了问题，直到想通了关键：人的系统2思维并不是均匀分布的。我的思考链条比较复杂，需要遵循很多逻辑步骤，所以用Agent复现我极贵。但我观察发现，大多数人的系统2思维，并不遵循这么复杂的步骤。如果拿同样的问题问所有人："如果蒸馏一个像你一样做决策的AI，比你贵还是便宜"，我的回答是贵，而很多人的回答是便宜。答案是"便宜"，自然会推导出AI可取代人类。答案是"贵"，自然会推导出AI不可取代人类。</p>
+
+            <p>至此，我补全了整个逻辑闭环。那些真正推动领域前进的顶尖人类，系统2思维的复杂度远超于我，所以这拨人，AI永远无法取代。</p>
+
+            <p>不过，这不影响AI能取代绝大多数人——甚至在我和我的同行这一极小圈层里，依然有大量人的系统2思考比AI更便宜。所以这算是一个标题党式的论述，我到最后也没有论证"AI无法取代人类"，只论证了AI无法取代少数人，同时完全兼容"AI即将取代大部分人类"的结论。</p>
+
+            <p>但至少，朋友，这有没有给你带来一些希望呢？</p>
+        </article>
+    </div>
+</body>
+</html>
