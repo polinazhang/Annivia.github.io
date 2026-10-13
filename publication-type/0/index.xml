@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>0 | Xijia</title>
+    <link>https://www.xijia.me/publication-type/0/</link>
+      <atom:link href="https://www.xijia.me/publication-type/0/index.xml" rel="self" type="application/rss+xml" />
+    <description>0</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://www.xijia.me/media/icon_hud0878d03dbfef15a826247f760be8539_121126_512x512_fill_lanczos_center_3.png</url>
+      <title>0</title>
+      <link>https://www.xijia.me/publication-type/0/</link>
+    </image>
+    
+    <item>
+      <title>FlowEval: How Much Adaptation Does an Embodied Foundation Model Need at Deployment?</title>
+      <link>https://www.xijia.me/publication/paper-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.xijia.me/publication/paper-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CAPEX: Efficiently Distilling Foundation Model Behavior into Deployable Robot Policies through Experience-Adaptive Reasoning</title>
+      <link>https://www.xijia.me/publication/paper-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.xijia.me/publication/paper-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model-agnostic policy explanations with large language models</title>
+      <link>https://www.xijia.me/publication/paper-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.xijia.me/publication/paper-3/</guid>
+      <description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Examples of behavior explanations and next-action predictions for rescue and search tasks&#34; srcset=&#34;
+               /publication/paper-3/next-action_hu27b8036add94149a3f713c10fddc4cf8_321197_e518b148c407c93be261eb6ad69de515.webp 400w,
+               /publication/paper-3/next-action_hu27b8036add94149a3f713c10fddc4cf8_321197_8b1fbc5d868c03ab6c4baebec858f64b.webp 760w,
+               /publication/paper-3/next-action_hu27b8036add94149a3f713c10fddc4cf8_321197_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://www.xijia.me/publication/paper-3/next-action_hu27b8036add94149a3f713c10fddc4cf8_321197_e518b148c407c93be261eb6ad69de515.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;379&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
